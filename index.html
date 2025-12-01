@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Design System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Website Design System</h1>
+    <p>A comprehensive guide to the visual vocabulary and components of our website.</p>
+</header>
+
+<main>
+
+    <section id="colors">
+        <h2>Color Palette</h2>
+        <div class="color-container">
+            <div class="color-card">
+                <div class="color-box primary-blue"></div>
+                <h3>Primary Blue</h3>
+                <p><strong>Hex:</strong> #007bff</p>
+                <p><strong>Use:</strong> Key branding elements, primary buttons, main links, and accents.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box secondary-teal"></div>
+                <h3>Secondary Teal</h3>
+                <p><strong>Hex:</strong> #17a2b8</p>
+                <p><strong>Use:</strong> Complementary actions, secondary buttons, and decorative elements.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box success-green"></div>
+                <h3>Success Green</h3>
+                <p><strong>Hex:</strong> #28a745</p>
+                <p><strong>Use:</strong> Positive feedback, form success messages, and "complete" states.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box danger-red"></div>
+                <h3>Danger Red</h3>
+                <p><strong>Hex:</strong> #dc3545</p>
+                <p><strong>Use:</strong> Error messages, destructive actions (e.g., delete), and warnings.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box light-gray"></div>
+                <h3>Light Gray</h3>
+                <p><strong>Hex:</strong> #f8f9fa</p>
+                <p><strong>Use:</strong> Subtle background for sections, alternating table rows, and borders.</p>
+            </div>
+
+            <div class="color-card">
+                <div class="color-box dark-gray"></div>
+                <h3>Dark Gray</h3>
+                <p><strong>Hex:</strong> #343a40</p>
+                <p><strong>Use:</strong> Primary text, headings, and strong content elements.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="typography">
+        <h2>Typography</h2>
+
+        <div class="font-example" id="source-sans-pro">
+            <h3>Source Sans Pro (Body/UI Font)</h3>
+
+            <div class="font-styles">
+                <h4>Regular (400)</h4>
+                <p class="regular">The quick brown fox jumps over the lazy dog. (Used for general paragraph text.)</p>
+            </div>
+
+            <div class="font-styles">
+                <h4>Italic (400 italic)</h4>
+                <p class="italic">The quick brown fox jumps over the lazy dog. (Used for emphasis or quotes.)</p>
+            </div>
+
+            <div class="font-styles">
+                <h4>Bold (700)</h4>
+                <p class="bold">The quick brown fox jumps over the lazy dog. (Used for strong emphasis and labels.)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="font-example" id="lora">
+            <h3>Lora (Heading Font)</h3>
+
+            <div class="font-styles">
+                <h4>Regular (400)</h4>
+                <p class="lora-font regular-lora">The quick brown fox jumps over the lazy dog. (Used for primary section titles.)</p>
+            </div>
+
+            <div class="font-styles">
+                <h4>Bold (700)</h4>
+                <p class="lora-font bold-lora">The quick brown fox jumps over the lazy dog. (Used for article titles and major headings.)</p>
+            </div>
+        </div>
+        <hr>
+
+        <div id="text-styles">
+            <h3>Specific Text Styles</h3>
+            <p>These definitions ensure consistent application of typography across the site.</p>
+
+            <div class="style-card">
+                <h4>Main Heading (H1)</h4>
+                <p class="style-rules">
+                    <code>font-family: var(--font-heading);</code><br>
+                    <code>font-weight: 700;</code><br>
+                    <code>font-size: 3.5rem;</code><br>
+                    <code>color: var(--color-dark-gray);</code>
+                </p>
+                <h1 class="h1-style-demo">H1: Website Main Title Example</h1>
+            </div>
+
+            <div class="style-card">
+                <h4>Subheading (H2)</h4>
+                <p class="style-rules">
+                    <code>font-family: var(--font-heading);</code><br>
+                    <code>font-weight: 400;</code><br>
+                    <code>font-size: 2.0rem;</code><br>
+                    <code>color: var(--color-dark-gray);</code>
+                </p>
+                <h2 class="h2-style-demo">H2: Section Subheading Title</h2>
+            </div>
+
+            <div class="style-card">
+                <h4>Body Text (Paragraph)</h4>
+                <p class="style-rules">
+                    <code>font-family: var(--font-primary);</code><br>
+                    <code>font-weight: 400;</code><br>
+                    <code>font-size: 1.1rem;</code><br>
+                    <code>line-height: 1.6;</code><br>
+                    <code>color: var(--color-dark-gray);</code>
+                </p>
+                <p class="p-style-demo">P: This is the standard paragraph text used for all main content. It should be highly legible and easy to read across all devices, ensuring a comfortable user experience.</p>
+            </div>
+        </div>
+    </section>
+    <section id="components">
+        <h2> UI Components: Buttons</h2>
+        <p>Reusable elements for user interaction, styled to match the color palette.</p>
+
+        <div class="button-container">
+            <div class="component-card">
+                <h4>Primary Button</h4>
+                <button class="btn btn-primary">Primary Action</button>
+                <p class="component-rules">
+                    <code>.btn-primary</code>
+                </p>
+            </div>
+
+            <div class="component-card">
+                <h4>Secondary Button</h4>
+                <button class="btn btn-secondary">Secondary Action</button>
+                <p class="component-rules">
+                    <code>.btn-secondary</code>
+                </p>
+            </div>
+
+            <div class="component-card">
+                <h4>Danger Button</h4>
+                <button class="btn btn-danger">Danger Action</button>
+                <p class="component-rules">
+                    <code>.btn-danger</code>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Design System</p>
+</footer>
+
+</body>
+</html>
